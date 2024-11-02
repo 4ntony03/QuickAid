@@ -243,3 +243,134 @@ body {
   padding: 10px;
   font-weight: bold;
 }
+
+/* INICIO DE SESIÓN */
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.login-form h2,
+.register-form h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form label,
+.register-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #4fc3f7;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-register {
+  width: 100%;
+  background-color: #4fc3f7;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #3ca4d3;
+}
+
+.btn-register:hover {
+  background-color: #3ca4d3;
+}
+
+.or-text {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-login .google-login {
+  background-color: #db4437;
+  color: white;
+}
+
+.social-login .facebook-login {
+  background-color: #3b5998;
+  color: white;
+}
+
+.social-login button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.register-text,
+.login-text,
+.back-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-text a,
+.login-text a,
+.back-text a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.register-text a:hover,
+.login-text a:hover,
+.back-text a:hover {
+  text-decoration: underline;
+}

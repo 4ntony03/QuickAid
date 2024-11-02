@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión - QuickAid</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <h2>Iniciar sesión en QuickAid</h2>
+
+        <!-- Formulario de inicio de sesión con correo y contraseña -->
+        <form action="login_process.php" method="post">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" class="btn-login">Iniciar sesión</button>
+        </form>
+
+        <p class="or-text">O iniciar sesión con</p>
+
+        <!-- Botones de inicio de sesión con Google y Facebook -->
+        <div class="social-login">
+          <button class="google-login">
+            <img src="img/google.png" alt="Google Icon" /> Iniciar con Google
+          </button>
+          <button class="facebook-login">
+            <img src="img/facebook.webp" alt="Facebook Icon" /> Iniciar con
+            Facebook
+          </button>
+        </div>
+
+        <p class="register-text">
+          ¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>
+        </p>
+        <p class="back-text">
+          <a href="index.html">← Volver al inicio</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
