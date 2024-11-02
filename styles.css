@@ -109,3 +109,30 @@ body {
 .btn-register:hover {
   background-color: gray;
 }
+
+/*SECCION INICIAL*/
+.inicio-section {
+  padding-top: 100px;
+  align-items: auto 0;
+}
+
+.mensaje h2 {
+  font-size: 3.5rem;
+  margin-left: 50px;
+  font-family: poppins;
+}
+
+.inicio-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen {
+  margin-right: 0px;
+  margin-top: 50px;
+}
+
+.imagen img {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
