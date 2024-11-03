@@ -137,13 +137,14 @@ body {
   border-bottom-left-radius: 50px;
 }
 
-/* SECCION CONTACTO */
+/* SECCIÓN CONTACTO */
 #contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding-top: 80px;
+  height: 100vh; /* Altura total de la ventana */
+  padding: 40px 20px; /* Espaciado adicional para evitar que toque los bordes */
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -153,7 +154,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  width: 100%;
+  width: 100%; /* Ajuste responsive */
+  box-sizing: border-box;
 }
 
 .contact-form-container h2 {
@@ -181,6 +183,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .contact-form-container button {
@@ -191,12 +194,15 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form-container button:hover {
   background-color: #0056b3;
 }
 
+/* SECCION APRENDER */
 .aprender-section {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   padding: 50px 0;
