@@ -4,16 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contáctanos - QuickAid</title>
+    <title>Envenenamiento</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- MENU DE NAVEGACIÓN -->
@@ -45,6 +37,8 @@
               <li><a href="sangrado.html">Sangrado</a></li>
               <li><a href="envenenamiento.html">Envenenamiento</a></li>
             </ul>
+          </li>
+
           <li><a href="aprender.html">Aprender</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
           <li><a href="inicio_sesion.html">Salir de la Cuenta</a></li>
@@ -71,65 +65,52 @@
       </div>
     </nav>
 
-    <!-- SECCIÓN DE CONTACTO -->
-    <section id="contacto">
-      <div class="contact-form-container">
-        <h2>Contáctanos</h2>
-        <p>Estamos aquí para ayudarte. No dudes en contactarnos.</p>
-        <form action="#" method="POST">
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" required />
+    <main class="content-section">
+      <h1>Envenenamiento</h1>
+      <p>
+        El envenenamiento puede ocurrir por ingestión, inhalación, contacto o
+        inyección de sustancias tóxicas. Reconocer los síntomas es esencial.
+      </p>
 
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" required />
+      <section class="emergency-info">
+        <img
+          src="img2/enve.jpg"
+          alt="Símbolo de envenenamiento"
+          class="emergency-image"
+        />
+        <div class="emergency-steps">
+          <h2>Qué hacer en caso de envenenamiento</h2>
+          <ol>
+            <li>
+              <strong>No inducir el vómito:</strong> A menos que sea indicado
+              por un profesional médico.
+            </li>
+            <li>
+              <strong>Identificar la sustancia:</strong> Intenta determinar qué
+              fue ingerido y en qué cantidad.
+            </li>
+            <li>
+              <strong>Contactar emergencias:</strong> Llama a un centro de
+              control de intoxicaciones o al número de emergencia local.
+            </li>
+            <li>
+              <strong>Mantener la calma:</strong> Brinda detalles claros y sigue
+              las instrucciones del personal médico.
+            </li>
+          </ol>
+        </div>
+      </section>
 
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required />
+      <section class="extra-info">
+        <h2>Prevención de envenenamientos</h2>
+        <p>
+          Mantén productos químicos y medicamentos fuera del alcance de los
+          niños. Lee las etiquetas y sigue las instrucciones de uso.
+        </p>
+      </section>
+    </main>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
     <footer class="footer-section">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>QuickAid</h3>
-          <ul>
-            <li><a href="#">¿Quiénes Somos?</a></li>
-            <li><a href="#">Contáctanos</a></li>
-            <li><a href="#">Soporte</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Recursos</h3>
-          <ul>
-            <li><a href="#">Guías de Emergencias</a></li>
-            <li><a href="#">Videos Tutoriales</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Redes Sociales</h3>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Protección de Datos</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="footer-line" />
       <div class="footer-bottom">
         <p>&copy; 2024 QuickAid - Cada segundo cuenta</p>
       </div>

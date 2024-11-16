@@ -26,7 +26,31 @@
           alt="LogoQuickAid"
         />
       </a>
-
+      <div class="menu-bubble">
+        <div class="hamburger-menu" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="emergencias.html">Emergencias</a>
+            <ul class="menu-vertical">
+              <li><a href="cpr.html">CPR</a></li>
+              <li><a href="quemaduras.html">Quemaduras</a></li>
+              <li><a href="asfixia.html">Asfixia</a></li>
+              <li><a href="sangrado.html">Sangrado</a></li>
+              <li><a href="envenenamiento.html">Envenenamiento</a></li>
+            </ul>
+          </li>
+          <li><a href="aprender.html">Aprender</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="inicio_sesion.html">Salir de la Cuenta</a></li>
+        </ul>
+      </nav>
       <ul class="menu-horizontal">
         <li><a href="index.html">Inicio</a></li>
         <li>
@@ -43,8 +67,8 @@
         <li><a href="contacto.html">Contáctanos</a></li>
       </ul>
       <div class="botones-acceder">
-        <a href="#" class="btn-login">Iniciar sesión</a>
-        <a href="contacto.html" class="btn-register">Registrarse</a>
+        <a href="inicio_sesion.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
       </div>
     </nav>
 
@@ -68,7 +92,7 @@
           <span>Quemaduras</span>
         </div>
         <div class="modulo-card">
-          <img src="img/envenenamiento.webp" alt="Envenenamiento" />
+          <img src="img2/enve.jpg" alt="Envenenamiento" />
           <span>Envenenamiento</span>
         </div>
       </div>
@@ -80,57 +104,47 @@
         </div>
       </div>
     </section>
-
-     <!-- PIE DE PAGINA -->
-
     <footer class="footer-section">
-      <div class="Container-Inscripcion">
-        <!--nombre del formulario-->
-        <form name="frm" method="post" action="">
-          <fieldset id="form">
-              <ol>
-                <label>Buscar:</label><br>
-                  <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escriba aquí su búsqueda..."></textarea>
-                
-                  <li><label>¿Necesita ayuda profesional?</label>
-                    <input type="checkbox" name="fcedes" value="Alu"/> De click en el boton
-                  </li>
-
-              </ol>
-          </fieldset>
-      
-
       <div class="footer-container">
         <div class="footer-column">
-          <h3>Nosotros</h3>
-
+          <h3>QuickAid</h3>
           <ul>
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Correo electrónico de soporte</a></li>
+            <li><a href="#">¿Quiénes Somos?</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Soporte</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>Recursos</h3>
           <ul>
-            <li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
-            <li><a href="#">Guías para principiantes</a></li>
-            <li><a href="#">Blog con contenido relevante</a></li>
+            <li><a href="#">Guías de Emergencias</a></li>
+            <li><a href="#">Videos Tutoriales</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>Legal</h3>
           <ul>
-            <li><a href="#">Políticas</a></li>
-            <li><a href="#">Reglamentos</a></li>
-            <li><a href="#">Normas</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Protección de Datos</a></li>
           </ul>
         </div>
       </div>
 
       <hr class="footer-line" />
       <div class="footer-bottom">
-        <p>Nunca sabes cuando tendras que salvar una vida</p>
+        <p>&copy; 2024 QuickAid - Cada segundo cuenta</p>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

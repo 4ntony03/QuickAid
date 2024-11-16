@@ -4,16 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contáctanos - QuickAid</title>
+    <title>Sangrado</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- MENU DE NAVEGACIÓN -->
@@ -45,6 +37,8 @@
               <li><a href="sangrado.html">Sangrado</a></li>
               <li><a href="envenenamiento.html">Envenenamiento</a></li>
             </ul>
+          </li>
+
           <li><a href="aprender.html">Aprender</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
           <li><a href="inicio_sesion.html">Salir de la Cuenta</a></li>
@@ -71,65 +65,53 @@
       </div>
     </nav>
 
-    <!-- SECCIÓN DE CONTACTO -->
-    <section id="contacto">
-      <div class="contact-form-container">
-        <h2>Contáctanos</h2>
-        <p>Estamos aquí para ayudarte. No dudes en contactarnos.</p>
-        <form action="#" method="POST">
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" required />
+    <main class="content-section">
+      <h1>Sangrado</h1>
+      <p>
+        El sangrado puede ser externo o interno y representa una emergencia
+        cuando es severo. Saber cómo detenerlo es vital para salvar vidas.
+      </p>
 
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" required />
+      <section class="emergency-info">
+        <img
+          src="img/sangrado.jpg"
+          alt="Control de sangrado con presión directa"
+          class="emergency-image"
+        />
+        <div class="emergency-steps">
+          <h2>Primeros auxilios para sangrado</h2>
+          <ol>
+            <li>
+              <strong>Presión directa:</strong> Aplica presión firme con un paño
+              limpio directamente sobre la herida.
+            </li>
+            <li>
+              <strong>Elevación:</strong> Si es posible, eleva la parte afectada
+              por encima del nivel del corazón.
+            </li>
+            <li>
+              <strong>Evitar:</strong> No retires objetos incrustados,
+              estabilízalos mientras buscas atención médica.
+            </li>
+            <li>
+              <strong>Si el sangrado no cesa:</strong> Continúa aplicando
+              presión y llama a emergencias de inmediato.
+            </li>
+          </ol>
+        </div>
+      </section>
 
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required />
+      <section class="extra-info">
+        <h2>Tipos de sangrado</h2>
+        <p>
+          Los tipos incluyen capilar (leve), venoso (flujo constante) y arterial
+          (a chorro). La atención adecuada depende de identificar el tipo de
+          sangrado.
+        </p>
+      </section>
+    </main>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
     <footer class="footer-section">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>QuickAid</h3>
-          <ul>
-            <li><a href="#">¿Quiénes Somos?</a></li>
-            <li><a href="#">Contáctanos</a></li>
-            <li><a href="#">Soporte</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Recursos</h3>
-          <ul>
-            <li><a href="#">Guías de Emergencias</a></li>
-            <li><a href="#">Videos Tutoriales</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Redes Sociales</h3>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Protección de Datos</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="footer-line" />
       <div class="footer-bottom">
         <p>&copy; 2024 QuickAid - Cada segundo cuenta</p>
       </div>
