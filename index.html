@@ -17,59 +17,45 @@
   </head>
   <body>
     <!-- MENU DE NAVEGACIÓN -->
-<nav class="topheader">
-  <a href="index.html" class="logo">
-    <img
-      height="75"
-      width="75"
-      src="img/Logo_QuickAid.png"
-      alt="LogoQuickAid"
-    />
-  </a>
-  <div class="menu-bubble">
-    <div class="hamburger-menu" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <nav class="mobile-menu" id="mobile-menu">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li>
-        <a href="emergencias.html">Emergencias</a>
-        <ul class="menu-vertical">
-          <li><a href="cpr.html">CPR</a></li>
-          <li><a href="quemaduras.html">Quemaduras</a></li>
-          <li><a href="asfixia.html">Asfixia</a></li>
-          <li><a href="sangrado.html">Sangrado</a></li>
-          <li><a href="envenenamiento.html">Envenenamiento</a></li>
-        </ul>
-      <li><a href="aprender.html">Aprender</a></li>
-      <li><a href="contacto.html">Contáctanos</a></li>
-      <li><a href="inicio_sesion.html">Salir de la Cuenta</a></li>
-    </ul>
-  </nav>
-  <ul class="menu-horizontal">
-    <li><a href="index.html">Inicio</a></li>
-    <li>
-      <a href="emergencias.html">Emergencias</a>
-      <ul class="menu-vertical">
-        <li><a href="cpr.html">CPR</a></li>
-        <li><a href="quemaduras.html">Quemaduras</a></li>
-        <li><a href="asfixia.html">Asfixia</a></li>
-        <li><a href="sangrado.html">Sangrado</a></li>
-        <li><a href="envenenamiento.html">Envenenamiento</a></li>
+    <nav class="topheader">
+      <a href="index.html" class="logo">
+        <img
+          height="75"
+          width="75"
+          src="img/Logo_QuickAid.png"
+          alt="LogoQuickAid"
+        />
+      </a>
+      <!-- Boton Menu Responsive- Open -->
+      <button class="open-menu" aria-label="Abrir-menu">
+        <img src="img2/hamburger-icon.svg" alt="" />
+      </button>
+
+      <ul class="menu-horizontal">
+        <!-- Boton Menu Responsive- Close -->
+        <button class="close-menu" aria-label="Cerrar-menu">
+          <img src="img2/close-icon.svg" alt="" />
+        </button>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="emergencias.html">Emergencias</a>
+          <ul class="menu-vertical">
+            <li><a href="cpr.html">CPR</a></li>
+            <li><a href="quemaduras.html">Quemaduras</a></li>
+            <li><a href="asfixia.html">Asfixia</a></li>
+            <li><a href="sangrado.html">Sangrado</a></li>
+            <li><a href="envenenamiento.html">Envenenamiento</a></li>
+          </ul>
+        </li>
+        <li><a href="aprender.html">Aprender</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
       </ul>
-    </li>
-    <li><a href="aprender.html">Aprender</a></li>
-    <li><a href="contacto.html">Contáctanos</a></li>
-  </ul>
-  <div class="botones-acceder">
-    <a href="inicio_sesion.html" class="btn-login">Iniciar sesión</a>
-    <a href="registro.html" class="btn-register">Registrarse</a>
-  </div>
-</nav>
+      <div class="botones-acceder">
+        <a href="inicio_sesion.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+    </nav>
+
     <!-- SECCION INICIAL -->
     <section id="inicio" class="inicio-section">
       <div class="content-inicio">
@@ -89,6 +75,24 @@
         />
       </div>
     </section>
+    <section class="extra-info">
+      <h2>CONCEPTOS GENERALES</h2>
+    </section>
+    <!-- SECCION VIDEO -->
+    <section class="video-section">
+      <div class="video-content">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/dIlxxMJMpv0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer-section">
       <div class="footer-container">
         <div class="footer-column">
@@ -124,19 +128,19 @@
           </ul>
         </div>
       </div>
-
       <hr class="footer-line" />
       <div class="footer-bottom">
         <p>&copy; 2024 QuickAid - Cada segundo cuenta</p>
       </div>
-    </footer><!--FLOATING SOCIAL MEDIA-->
+    </footer>
+
     <div class="Container_SN">
       <ul class="Banner_SN">
         <li>
           <img src="img/facebook_sidebar.png" width="32" height="32" />
           <p>
             <a href="Pagina Oficial" target="_blank"
-              >Siguenos en<br />Facebook</a
+              >Síguenos en<br />Facebook</a
             >
           </p>
         </li>
@@ -144,30 +148,29 @@
           <img src="img/instagram_sidebar.png" width="32" height="32" />
           <p>
             <a href="Pagina Oficial" target="_blank"
-              >Siguenos en<br />Instagram</a
+              >Síguenos en<br />Instagram</a
             >
           </p>
         </li>
-      </li>
-      <li>
-        <img src="img/tiktok_sidebar.png" width="32" height="32" />
-        <p>
-          <a href="Pagina Oficial" target="_blank"
-            >Siguenos en<br />Tik Tok</a
-          >
-        </p>
-      </li>
-    </li>
-    <li>
-      <img src="img/whatsapp_sidebar.webp" width="32" height="32" />
-      <p>
-        <a href="Pagina Oficial" target="_blank"
-          >Contactanos por<br />WhatsApp</a
-        >
-      </p>
-    </li>
+        <li>
+          <img src="img/tiktok_sidebar.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Síguenos en<br />Tik Tok</a
+            >
+          </p>
+        </li>
+        <li>
+          <img src="img/whatsapp_sidebar.webp" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Contáctanos por<br />WhatsApp</a
+            >
+          </p>
+        </li>
       </ul>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>

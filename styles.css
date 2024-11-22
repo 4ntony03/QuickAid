@@ -1,3 +1,8 @@
+.open-menu,
+.close-menu {
+  display: none;
+}
+
 /*BODY*/
 body {
   background-image: url("https://img.freepik.com/vector-premium/cuidado-salud-fondo-medico-geometrico-abstracto-iconos-concepto-e-idea-innovacion-tecnologica-salud-medicina-diseno-vectorial-ciencias-salud_258787-6237.jpg?semt=ais_hybrid");
@@ -143,6 +148,51 @@ body {
 .imagen img {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+}
+
+/* SECCION VIDEO */
+.video-section {
+  padding: 100px;
+  background-color: #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 720px;
+  max-width: 720px;
+  height: auto;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 720px;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.text-video {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  z-index: 10;
+  width: 80%;
+}
+
+.text-video h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-video p {
+  font-size: 1.2rem;
 }
 
 /* SECCIÓN CONTACTO */
@@ -640,4 +690,161 @@ body {
 .extra-info p {
   font-size: 1.2rem;
   color: #666;
+}
+/* Configuracion Responsive*/
+@media (max-width: 768px) {
+  /* MENU*/
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #c7c2c2;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 0;
+  }
+
+  .menu-horizontal a {
+    color: black;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0712ed;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #2f37d3;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+  }
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* Configuracion Responsive*/
+@media (max-width: 768px) {
+  /* MENU */
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #7be0ff;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 0;
+  }
+
+  .menu-horizontal a {
+    color: rgb(255, 255, 255);
+    line-height: 70px;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0712ed;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #2f37d3;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: rgb(43, 177, 255);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    margin-left: 5px;
+  }
+
+  .close-menu {
+    align-self: flex-start;
+    padding: 10px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .video-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-video,
+  .adn-info {
+    width: 100%;
+  }
 }
